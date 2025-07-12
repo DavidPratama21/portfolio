@@ -1,26 +1,23 @@
-
-
 const Footer = () => {
     const socialLinks = [
         {
             name: "GitHub",
-            url: "https://github.com",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+            url: "https://github.com/DavidPratama21",
+            // icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+            // icon: "https://static.cdnlogo.com/logos/g/69/github-icon.svg",
+            icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg",
         },
         {
             name: "LinkedIn",
-            url: "https://linkedin.com",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
+            url: "https://www.linkedin.com/in/david-prt/",
+            // icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg",
+            // icon: "https://static.cdnlogo.com/logos/l/72/linkedin-icon.svg",
+            icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg",
         },
         {
-            name: "Twitter",
-            url: "https://twitter.com",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg",
-        },
-        {
-            name: "Dribbble",
-            url: "https://dribbble.com",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dribbble/dribbble-original.svg",
+            name: "Instagram",
+            url: "http://instagram.com/daun_coklat",
+            icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg",
         },
     ];
     return (
@@ -29,10 +26,10 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="text-center md:text-left">
                         <h2 className="text-2xl font-bold text-gray-700 dark:text-white mb-4">
-                            John Doe
+                            David Pratama
                         </h2>
                         <p className="text-gray-600 dark:text-gray-400">
-                            Frontend Developer & UI Designer
+                            Frontend Developer
                         </p>
                     </div>
                     <div className="text-center md:text-right">
@@ -59,7 +56,7 @@ const Footer = () => {
                             ))}
                         </div>
                         <p className="text-gray-500 dark:text-gray-500 text-sm">
-                            &copy; {new Date().getFullYear()} John Doe. All
+                            &copy; {new Date().getFullYear()} David Pratama. All
                             rights reserved.
                         </p>
                     </div>

@@ -14,27 +14,36 @@ const About = () => {
                             Who am I?
                         </h3>
                         <p className="text-gray-600 dark:text-gray-400 mb-6">
+                            I’m David, a Fullstack Developer with a background
+                            in Digital Business. I’ve built real-world web
+                            projects using React.js and Zustand through the
+                            Harisenin bootcamp, and gained practical experience
+                            during my internship as a Web Developer. I'm
+                            detail-oriented, eager to learn, and passionate
+                            about building impactful digital solutions.
+                        </p>
+                        {/* <p className="text-gray-600 dark:text-gray-400 mb-6">
                             I'm a passionate frontend developer with 5 years of
                             experience creating modern web applications. I
-                            specialize in React, TypeScript, and building
-                            scalable UI components.
-                        </p>
-                        <p className="text-gray-600 dark:text-gray-400 mb-6">
+                            specialize in React and building scalable UI
+                            components.
+                        </p> */}
+                        {/* <p className="text-gray-600 dark:text-gray-400 mb-6">
                             My approach combines technical excellence with
                             design sensibility, ensuring the products I build
                             are both functional and beautiful.
-                        </p>
+                        </p> */}
                         <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
                             <h4 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3">
                                 Personal Information
                             </h4>
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <p className="text-gray-500 dark:text-gray-400">
                                         Name:
                                     </p>
                                     <p className="text-gray-700 dark:text-gray-300">
-                                        John Doe
+                                        David Pratama
                                     </p>
                                 </div>
                                 <div>
@@ -42,7 +51,7 @@ const About = () => {
                                         Email:
                                     </p>
                                     <p className="text-gray-700 dark:text-gray-300">
-                                        john@example.com
+                                        davidprt202@gmail.com
                                     </p>
                                 </div>
                                 <div>
@@ -50,17 +59,16 @@ const About = () => {
                                         Location:
                                     </p>
                                     <p className="text-gray-700 dark:text-gray-300">
-                                        San Francisco, CA
+                                        Tangerang Selatan, Banten
                                     </p>
                                 </div>
-                                <div>
-                                    <p className="text-gray-500 dark:text-gray-400">
-                                        Freelance:
-                                    </p>
-                                    <p className="text-gray-700 dark:text-gray-300">
-                                        Available
-                                    </p>
-                                </div>
+                                <a
+                                    href="#"
+                                    download
+                                    className="grid place-content-center border-2 border-blue-600 text-blue-600 bg-white hover:bg-blue-50 dark:bg-gray-900 dark:hover:bg-gray-800 px-6 py-3 rounded-lg font-medium transition"
+                                >
+                                    Download CV
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -69,24 +77,26 @@ const About = () => {
                             My Experience
                         </h3>
                         <div className="space-y-6">
+                            {/* Experience Shiba */}
                             <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
                                 <div className="flex justify-between mb-2">
                                     <h4 className="text-lg font-semibold text-gray-700 dark:text-gray-300">
-                                        Senior Frontend Developer
+                                        Web Developer Intern
                                     </h4>
                                     <span className="text-blue-600">
-                                        2020-Present
+                                        Jul, 2024 - Nov, 2024
                                     </span>
                                 </div>
                                 <p className="text-gray-500 dark:text-gray-400 mb-2">
-                                    TechCorp Inc.
+                                    PT. Shiba Hidrolik Pratama
                                 </p>
                                 <p className="text-gray-600 dark:text-gray-400">
-                                    Lead frontend development for enterprise
-                                    SaaS products using React and TypeScript.
+                                    Updated the company's old website using PHP,
+                                    JavaScript, and Tailwind CSS into a new,
+                                    modern version.
                                 </p>
                             </div>
-                            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                            {/* <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
                                 <div className="flex justify-between mb-2">
                                     <h4 className="text-lg font-semibold text-gray-700 dark:text-gray-300">
                                         Frontend Developer
@@ -103,24 +113,7 @@ const About = () => {
                                     applications for clients across various
                                     industries.
                                 </p>
-                            </div>
-                            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                                <div className="flex justify-between mb-2">
-                                    <h4 className="text-lg font-semibold text-gray-700 dark:text-gray-300">
-                                        UI/UX Designer
-                                    </h4>
-                                    <span className="text-blue-600">
-                                        2016-2018
-                                    </span>
-                                </div>
-                                <p className="text-gray-500 dark:text-gray-400 mb-2">
-                                    DesignStudio
-                                </p>
-                                <p className="text-gray-600 dark:text-gray-400">
-                                    Created wireframes, prototypes, and final
-                                    designs for web and mobile applications.
-                                </p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

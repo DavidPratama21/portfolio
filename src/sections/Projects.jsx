@@ -1,41 +1,36 @@
+import Preview_shiba from "../assets/shibahidrolikpratama.com.png";
 const Projects = () => {
     const projects = [
         {
-            name: "E-commerce Platform",
+            name: "Shiba Hidrolik Pratama",
             description:
-                "A full-featured online store with cart functionality, payment processing, and admin dashboard.",
-            image: "https://placehold.co/600x400",
-            tags: ["React", "Redux", "Firebase", "Stripe"],
-            demoLink: "#",
+                "A company profile website developed for PT Shiba Hidrolik Pratama to showcase their hydraulic manufacturing services, product catalog, and company information in a responsive and user-friendly layout.",
+            image: Preview_shiba,
+            // image: "https://placehold.co/600x400",
+            tags: ["PHP", "Tailwind"],
+            demoLink: "https://shibahidrolikpratama.com/",
             codeLink: "#",
         },
         {
-            name: "Task Management App",
+            name: "Video Belajar",
             description:
-                "A productivity application for organizing tasks with drag-and-drop functionality and team collaboration.",
+                "An EduTech web application developed during the Harisenin bootcamp, using React.js, Zustand, and Firebase Authentication to deliver a responsive, video-based learning experience.",
+            // image: "https://image.thum.io/get/width/800/https://videobelajar-harisenin.netlify.app/",
             image: "https://placehold.co/600x400",
-            tags: ["React", "TypeScript", "Tailwind CSS", "DnD"],
-            demoLink: "#",
-            codeLink: "#",
+            tags: ["React", "Tailwind CSS", "Zustand"],
+            demoLink: "https://videobelajar-harisenin.netlify.app/",
+            codeLink:
+                "https://github.com/DavidPratama21/harisenin-videobelajar",
         },
-        {
-            name: "Weather Dashboard",
-            description:
-                "Real-time weather information with interactive maps and 7-day forecasts for any location worldwide.",
-            image: "https://placehold.co/600x400",
-            tags: ["React", "Chart.js", "API Integration"],
-            demoLink: "#",
-            codeLink: "#",
-        },
-        {
-            name: "Social Media Dashboard",
-            description:
-                "Analytics dashboard showing key metrics and trends across multiple social media platforms.",
-            image: "https://placehold.co/600x400",
-            tags: ["React", "Next.js", "GraphQL"],
-            demoLink: "#",
-            codeLink: "#",
-        },
+        // {
+        //     name: "Sarana Gema Rekayasa",
+        //     description:
+        //         "A company profile website developed for a hydraulic component manufacturer, showcasing CNC-powered production capabilities and a fully equipped workshop. Designed with a clean, responsive layout to present services and company information effectively.",
+        //     image: "https://placehold.co/600x400",
+        //     tags: ["React", "Tailwind CSS"],
+        //     demoLink: "#",
+        //     codeLink: "#",
+        // },
     ];
     return (
         <section
@@ -56,7 +51,7 @@ const Projects = () => {
                                 <img
                                     src={project.image}
                                     alt={`Screenshot of ${project.name} project showing ${project.description}`}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover object-top"
                                     onError={(e) => {
                                         e.target.onerror = null;
                                         e.target.src =

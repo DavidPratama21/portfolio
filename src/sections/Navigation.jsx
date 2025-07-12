@@ -1,16 +1,13 @@
+// import { useStore } from "../Store";
+import Toggle_dark_mode from "../components/Toggle_dark_mode";
 const Navigation = () => {
+    // const { darkMode, toggleDarkMode } = useStore();
     return (
-        <nav className="py-6 px-4 sm:px-10 flex justify-between items-center bg-white dark:bg-gray-900 shadow-sm">
+        <nav className="relative py-6 px-4 sm:px-10 flex justify-between items-center bg-white dark:bg-gray-900 shadow-sm">
             <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
-                John Doe
+                David Pratama
             </h1>
             <div className="flex items-center space-x-4">
-                <button
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
-                >
-                    {darkMode ? "Light" : "Dark"}
-                </button>
                 <div className="hidden md:flex space-x-8">
                     <a
                         href="#about"
@@ -37,6 +34,14 @@ const Navigation = () => {
                         Contact
                     </a>
                 </div>
+                {/* Dark Mode BTN */}
+                {/* <button
+                    onClick={() => toggleDarkMode()}
+                    className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+                >
+                    {darkMode === "dark" ? "Dark" : "Light"}
+                </button> */}
+                <Toggle_dark_mode />
             </div>
         </nav>
     );

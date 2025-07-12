@@ -1,21 +1,6 @@
 const Skills = () => {
     const skills = [
         {
-            name: "React",
-            level: 90,
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        },
-        {
-            name: "JavaScript",
-            level: 95,
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        },
-        {
-            name: "TypeScript",
-            level: 85,
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-        },
-        {
             name: "HTML",
             level: 95,
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -26,19 +11,29 @@ const Skills = () => {
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
         },
         {
-            name: "Tailwind CSS",
-            level: 85,
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+            name: "JavaScript",
+            level: 95,
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
         },
         {
-            name: "Node.js",
-            level: 70,
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+            name: "React",
+            level: 90,
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+            name: "Tailwind CSS",
+            level: 85,
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
         },
         {
             name: "Git",
             level: 80,
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        },
+        {
+            name: "Figma",
+            level: 80,
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
         },
     ];
     return (
@@ -68,12 +63,12 @@ const Skills = () => {
                             <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300">
                                 {skill.name}
                             </h3>
-                            <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2 mt-3">
+                            {/* <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2 mt-3">
                                 <div
                                     className="bg-blue-600 h-2 rounded-full"
                                     style={{ width: `${skill.level}%` }}
                                 ></div>
-                            </div>
+                            </div> */}
                         </div>
                     ))}
                 </div>
