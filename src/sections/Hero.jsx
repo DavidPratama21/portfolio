@@ -1,4 +1,3 @@
-import Profile from "../assets/Profile.JPG"
 const Hero = () => {
     return (
         <section className="py-20 px-4 sm:px-10 flex flex-col md:flex-row items-center justify-between gap-10">
@@ -25,7 +24,7 @@ const Hero = () => {
             <div className="md:w-1/2 flex justify-center">
                 <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-blue-500">
                     <img
-                        src={Profile}
+                        src="/assets/images/profile.JPG"
                         alt="Professional headshot of John Doe, a frontend developer, wearing a blue shirt against a modern office background"
                         className="w-full h-full object-cover"
                     />
