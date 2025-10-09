@@ -31,9 +31,9 @@ const Contact = () => {
         e.preventDefault();
 
         // EmailJS service ID, template ID, and Public Key
-        const serviceId = "service_3oynwhk";
-        const templateId = "template_jaig19i";
-        const publicKey = "55vSfEafeh6IkONm7";
+        const serviceId = "service_a8szgum";
+        const templateId = "template_yi2jn9c";
+        const publicKey = "nGXS61qSMgX5C-7cB";
 
         console.log("Form submitted:", formData);
         setIsSubmitted(true);
