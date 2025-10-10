@@ -16,7 +16,7 @@ const Projects = () => {
         "An EduTech web application developed during the Harisenin bootcamp, using React.js, Zustand, and Firebase Authentication to deliver a responsive, video-based learning experience.",
       image: "/assets/images/videobelajar.png",
       tags: ["React", "Tailwind CSS", "Zustand"],
-      demoLink: "",
+      demoLink: "https://video-belajar-portfolio.netlify.app/",
       codeLink: "https://github.com/DavidPratama21/videobelajar",
     },
     {

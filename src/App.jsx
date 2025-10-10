@@ -6,6 +6,7 @@ import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Projects />
                 <Contact />
                 <Footer />
+                <WhatsAppButton />
             </main>
         </div>
     );
