@@ -24,7 +24,7 @@ const Hero = () => {
             <div className="md:w-1/2 flex justify-center">
                 <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-blue-500">
                     <img
-                        src="/assets/images/profile.JPG"
+                        src="/assets/images/profile.webp"
                         alt="Professional headshot of John Doe, a frontend developer, wearing a blue shirt against a modern office background"
                         className="w-full h-full object-cover"
                     />

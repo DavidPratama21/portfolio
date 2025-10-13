@@ -4,7 +4,7 @@ const Projects = () => {
       name: "Shiba Hidrolik Pratama",
       description:
         "A company profile website developed for PT Shiba Hidrolik Pratama to showcase their hydraulic manufacturing services, product catalog, and company information in a responsive and user-friendly layout.",
-      image: "/assets/images/shibahidrolikpratama.com.png",
+      image: "/assets/images/shibahidrolikpratama.com.webp",
       // image: "https://placehold.co/600x400",
       tags: ["PHP", "Tailwind"],
       demoLink: "https://shibahidrolikpratama.com/",
@@ -14,7 +14,7 @@ const Projects = () => {
       name: "Video Belajar",
       description:
         "An EduTech web application developed during the Harisenin bootcamp, using React.js, Zustand, and Firebase Authentication to deliver a responsive, video-based learning experience.",
-      image: "/assets/images/videobelajar.png",
+      image: "/assets/images/videobelajar.webp",
       tags: ["React", "Tailwind CSS", "Zustand"],
       demoLink: "https://video-belajar-portfolio.netlify.app/",
       codeLink: "https://github.com/DavidPratama21/videobelajar",
@@ -23,7 +23,7 @@ const Projects = () => {
       name: "Sarana Gema Rekayasa",
       description:
         "A company profile website developed for a hydraulic component manufacturer, showcasing CNC-powered production capabilities and a fully equipped workshop. Designed with a clean, responsive layout to present services and company information effectively.",
-      image: "/assets/images/saranagemarekayasa.png",
+      image: "/assets/images/saranagemarekayasa.webp",
       tags: ["React", "Tailwind CSS"],
       demoLink: "https://saranagemareka.netlify.app/",
       codeLink: "https://github.com/Daun2121/sarana-gr",
