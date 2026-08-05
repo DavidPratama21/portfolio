@@ -6,10 +6,20 @@ const Projects = () => {
         "A company profile website developed for PT Shiba Hidrolik Pratama to showcase their hydraulic manufacturing services, product catalog, and company information in a responsive and user-friendly layout.",
       image: "/assets/images/shibahidrolikpratama.com.webp",
       // image: "https://placehold.co/600x400",
-      tags: ["PHP", "Tailwind"],
+      tags: ["Next.js", "Tailwind CSS", "Prisma", "MySQL", "Zustand"],
       demoLink: "https://shibahidrolikpratama.com/",
       codeLink: "#",
     },
+    // {
+    //   name: "Shiba Hidrolik Pratama",
+    //   description:
+    //     "A company profile website developed for PT Shiba Hidrolik Pratama to showcase their hydraulic manufacturing services, product catalog, and company information in a responsive and user-friendly layout.",
+    //   image: "/assets/images/shibahidrolikpratama.com.webp",
+    //   // image: "https://placehold.co/600x400",
+    //   tags: ["PHP", "Tailwind"],
+    //   demoLink: "https://shibahidrolikpratama.com/",
+    //   codeLink: "#",
+    // },
     {
       name: "Video Belajar",
       description:
