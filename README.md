@@ -1,12 +1,76 @@
-# React + Vite
+# Daun Portfolio — React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio + CV single-page, bold & playful style. Dark mode + bilingual (ID/EN).
+Zero dependency runtime selain React — styling pakai CSS murni, tanpa framework.
 
-Currently, two official plugins are available:
+## Cara jalanin
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev      # development
+npm run build    # typecheck + production build -> dist/
+npm run preview  # preview hasil build
+```
 
-## Expanding the ESLint configuration
+## Edit konten
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Semua teks, project, skills, dan link ada di **`src/data/content.ts`** — satu file,
+tinggal edit. Tipe datanya strict TypeScript, jadi kalau ada yang kurang bakal
+langsung ke-flag editor.
+
+> 📌 Ada beberapa field yang masih placeholder (email, social link, dll).
+> Daftar lengkapnya di **[TODO.md](TODO.md)**.
+
+## Struktur
+
+```
+src/
+  App.tsx              komposisi section, kontrol intro loader
+  data/content.ts      SEMUA konten & copy ada di sini
+  hooks/useSettings.ts theme + bahasa (disimpan ke localStorage)
+  components/
+    ui.tsx             <Reveal> (animasi scroll) & <RichText> (**bold**/*italic*)
+    Nav Hero Marquee About Skills Projects Cv Contact
+    Loader ScrollProgress Cursor
+  styles.css           seluruh styling + design token
+public/                aset statis (foto, CV, screenshot project)
+```
+
+## Aset
+
+File di folder `public/` otomatis ikut ke-deploy tanpa setting apa-apa,
+dan diakses dari root — mis. `public/logo.png` → `/logo.png`.
+
+- **Foto profil** — atur path-nya di `profile.photo` (`content.ts`).
+  Rasio persegi paling aman, min 600×600px. Kalau file-nya nggak ketemu,
+  hero otomatis nampilin placeholder inisial.
+- **Screenshot project** — isi field `image` per project. Kalau dikosongin,
+  banner-nya jatuh balik ke emoji + gradien garis-garis.
+
+## Dark mode & bahasa
+
+- Preferensi theme & bahasa disimpan di `localStorage`, jadi keinget pas balik lagi.
+- Default theme ngikutin `prefers-color-scheme` OS; default bahasa Indonesia.
+- Semua animasi hormat ke `prefers-reduced-motion`.
+
+## Deploy
+
+Sudah termasuk `vercel.json`:
+
+**Via Dashboard:**
+1. Push project ini ke GitHub
+2. Buka [vercel.com/new](https://vercel.com/new) → Import repo
+3. Vercel auto-detect Vite, langsung klik **Deploy**
+
+**Via CLI:**
+```bash
+npm i -g vercel
+vercel          # deploy preview
+vercel --prod   # deploy production
+```
+
+Setiap push ke branch utama = auto redeploy. Custom domain diatur di
+Project Settings → Domains.
+
+> ⚠️ Setelah domain final ketahuan, update URL absolut di tag `og:*` /
+> `twitter:*` pada `index.html` — sekarang masih nunjuk domain lama.
