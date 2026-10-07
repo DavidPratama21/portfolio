@@ -36,14 +36,23 @@ export function Projects({ lang }: { lang: Lang }) {
       </Reveal>
       <div className="projects-grid">
         {projects.map((project, i) => (
-          <Reveal key={project.title.en} as="article" delay={i * 90} className="project">
+          <Reveal
+            key={project.title.en}
+            as="article"
+            delay={i * 90}
+            className="project"
+          >
             <Banner project={project} lang={lang} />
             <div className="project-body">
-              <span className="project-role">{project.role[lang]}</span>
+              <span className="project-type">{project.type}</span>
               <h3>
                 {project.url ? (
-                  <a href={project.url} target="_blank" rel="noopener noreferrer"
-                     style={{ textDecoration: "none" }}>
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                  >
                     {project.title[lang]} ↗
                   </a>
                 ) : (
@@ -53,20 +62,30 @@ export function Projects({ lang }: { lang: Lang }) {
               <p>{project.desc[lang]}</p>
               <div className="chips">
                 {project.chips.map((chip) => (
-                  <span key={chip} className="chip">{chip}</span>
+                  <span key={chip} className="chip">
+                    {chip}
+                  </span>
                 ))}
               </div>
               {(project.url || project.repo) && (
                 <div className="project-links">
                   {project.url && (
-                    <a className="project-link" href={project.url}
-                       target="_blank" rel="noopener noreferrer">
+                    <a
+                      className="project-link"
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {lang === "id" ? "Lihat Live" : "View Live"} ↗
                     </a>
                   )}
                   {project.repo && (
-                    <a className="project-link" href={project.repo}
-                       target="_blank" rel="noopener noreferrer">
+                    <a
+                      className="project-link"
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {lang === "id" ? "Kode" : "Code"} ↗
                     </a>
                   )}
